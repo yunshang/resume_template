@@ -1,6 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { createGlobalStyle } from 'styled-components';
+import Routes from './routes';
+
+// Global style
+// eslint-disable-next-line
+createGlobalStyle`
+  body {
+    margin: 0;
+    background: #F5F5F5;
+    font-family:"Open Sans", Arial, sans-serif;
+  }
+`;
 
 function App() {
   return (
