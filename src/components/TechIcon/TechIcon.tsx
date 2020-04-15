@@ -4,10 +4,13 @@ import styled from 'styled-components';
 interface ITech {
   name: string,
   img_path: string,
+  showSkill: boolean,
+  referenceOnly?: boolean,
 }
 
 interface IProps {
   tech: ITech,
+  key: string,
 } 
 
 interface IState {

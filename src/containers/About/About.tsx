@@ -10,7 +10,7 @@ import { actions as aboutActions } from '../../sagaDucks/about/about';
 import { Button, IconLink } from '../../components';
 
 interface IAbout {
-  social_links?: string,
+  social_links?: IValue[],
   email?: string,
   skype?: string,
   mobile?: string,
@@ -30,7 +30,7 @@ interface IProps {
 } 
 
 interface IState {
-  socialLinks?: string[],
+  socialLinks?: JSX.Element[],
   about?: IAbout,
 }
 
@@ -40,8 +40,6 @@ interface IValue {
   url: string,
   icon: string,
 }
-
-// type mapValue = (value: IValue) => JSX.Element || null;
 
 class AboutContainer extends React.Component<IProps, IState> {
   constructor(props: IProps) {
@@ -53,7 +51,7 @@ class AboutContainer extends React.Component<IProps, IState> {
   }
   componentWillReceiveProps(props: IProps) {
     const socialLinks = _.orderBy(props.about.social_links, ['order'], ['asc']).map((value: IValue) => {
-      let el = null;
+      let el: JSX.Element = (<></>);
       if (value.show) {
         el = (
           <li key={value.name}><IconLink href={value.url} icon={value.icon} /></li>

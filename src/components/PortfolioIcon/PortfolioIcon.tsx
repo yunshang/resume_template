@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface IData {
-  url: string,
-  name: string,
-  img_path: string,
+  isShow?: string,
+  name?: string,
+  url?: string,
+  img_path?: string,
 }
 interface IProps {
   data: IData,
