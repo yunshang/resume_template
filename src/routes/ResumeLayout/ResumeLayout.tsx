@@ -16,12 +16,13 @@ const ResumeLayoutGrid = styled.div`
 `;
 
 interface IProps {
+  children: React.ReactNode
 } 
 
-interface IState {
-}
-
-class ResumeLayout extends React.Component<IProps, IState> {
+class ResumeLayout extends React.Component<IProps> {
+  constructor(prop: IProps) {
+    super(prop);
+  };
   render() {
     return (
       <ResumeLayoutGrid>

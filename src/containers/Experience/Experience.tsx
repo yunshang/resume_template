@@ -16,10 +16,10 @@ interface IProps {
 }
 interface IExperience {
   workForm?: string,
-  workTo?: string,
-  workFrom?: string,
+  workTo: string,
+  workFrom: string,
   technologies?: string,
-  id?: number,
+  id?: string,
   dateFrom?: string,
   dateDuration?: string,
   dateTo?: string | JSX.Element,
@@ -73,6 +73,8 @@ class ExperienceContainer extends React.Component<IProps, IState> {
         dateFrom,
         dateTo,
         dateDuration,
+        workFrom: obj.workFrom,
+        workTo: obj.workTo,
         title: obj.title,
         tagLine: obj.company,
         tagLineLink: obj.company_website,

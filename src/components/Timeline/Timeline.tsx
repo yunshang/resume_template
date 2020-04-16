@@ -2,22 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface IProps {
-  data: 
-} 
+  data: IData[], 
+}
 
 interface IData {
-  id: number,
-  dateFrom: string,
-  dateTo: string,
-  title: string,
-  tagLine: string,
-  subContent: string,
+  id?: string,
+  dateFrom?: string,
+  dateTo?: string | JSX.Element,
+  title?: string,
+  tagLine?: string,
+  subContent?: JSX.Element,
   dateDuration?: string,
   mainContent?: string,
+  tagLineLink?: string,
 }
 
 interface IState {
-  events: string[]
+  events: JSX.Element[]
 }
 
 class TimelineComponent extends React.Component<IProps, IState> {

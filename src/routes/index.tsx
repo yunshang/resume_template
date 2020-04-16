@@ -1,29 +1,32 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch, RouteComponentProps,  RouteProps } from 'react-router-dom';
 import ResumeLayout from './ResumeLayout/ResumeLayout';
 import { Resume } from '../loadableCons';
 
-interface Fn extends Route {
-  component: () => void,
-  layout: () => void,
-  rest: string[],
+interface ResumeLayoutProps {
+  children: React.ReactNode
 }
 
-const AppRoute = ({ component, layout, ...rest }: Fn) => (
-    <Route
-      {...rest}
-      render={props => (
-        <Layout>
-          <Component {...props} />
-        </Layout>
-      )}
-    />
-  );
+interface AppRouteProps extends RouteProps{
+  Layout: React.ComponentClass<ResumeLayoutProps>,
+  Component: (props: RouteComponentProps) => JSX.Element,
+}
+
+const AppRoute = ({ Component, Layout, ...rest }: AppRouteProps) => (
+  <Route
+    {...rest}
+    render={props => (
+      <Layout>
+        <Component {...props} />
+      </Layout>
+    )}
+  />
+);
   
-  export default () => (
-    <HashRouter >
-      <Switch>
-        <AppRoute exact path="/" layout={ResumeLayout} component={Resume} />
-      </Switch>
-    </HashRouter >
-  );
+export default () => (
+  <HashRouter>
+    <Switch>
+      <AppRoute exact path="/" Layout={ResumeLayout} Component={Resume} />
+    </Switch>
+  </HashRouter>
+);

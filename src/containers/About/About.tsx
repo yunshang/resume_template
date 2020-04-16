@@ -102,7 +102,7 @@ class AboutContainer extends React.Component<IProps, IState> {
   }
 }
 
-const mapStateToProps = (state: IState) => (
+const mapStateToProps = (state: any) => (
   {
     about: state.about ? state.about.data : {},
   }

@@ -16,16 +16,23 @@ interface IState {
   education?: IEducation
 }
 
-interface IEducation {
+interface IData {
   id?: string,
+  dateFrom?: string,
+  dateTo?: string | JSX.Element,
+  title?: string,
+  tagLine?: string,
+  subContent?: JSX.Element,
+  dateDuration?: string,
+  mainContent?: string,
+  tagLineLink?: string,
+}
+
+interface IEducation extends IData {
   school?: string,
   studyFrom?: string,
   studyTo?: string,
   degree?: string,
-  title?: string,
-  tagLine?: string
-  dateFrom?: string,
-  dateTo?: string,
 }
 
 class EducationContainer extends React.Component<IProps, IState> {
