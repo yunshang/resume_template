@@ -12,7 +12,7 @@ interface AppRouteProps extends RouteProps{
   Component: (props: RouteComponentProps) => JSX.Element,
 }
 
-const AppRoute = ({ Component, Layout, ...rest }: AppRouteProps) => (
+const AppRoute = ({ Component, Layout, ...rest }: any) => (
   <Route
     {...rest}
     render={props => (

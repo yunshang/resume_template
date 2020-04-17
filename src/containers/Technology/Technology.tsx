@@ -43,6 +43,7 @@ class TechnologyContainer extends React.Component<IProps, IState> {
   }
   componentWillReceiveProps(props: IProps) {
     const referenceTechList: JSX.Element[] = [];
+    console.log(props.technology, 1111111)
     const techList = _.orderBy(props.technology, [tech => tech.name.toLowerCase()], ['asc']).map((tech: ITechnology) => {
       let el = (<></>);
       if (tech.showSkill && !tech.referenceOnly) {

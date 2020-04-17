@@ -6,6 +6,7 @@ import { types as educationTypes } from './education';
 function* educationWillFetch() {
   try {
     const education = yield call(rsf.database.read, 'education');
+    console.log(education, 333434)
     yield put({ type: educationTypes.EDUCATION_SUCCESS, education });
   } catch (e) {
     // console.log(e);

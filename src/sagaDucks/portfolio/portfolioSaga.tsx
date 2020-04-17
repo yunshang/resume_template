@@ -6,6 +6,7 @@ import { types as portfolioTypes } from './portfolio';
 function* portfolioWillFetch() {
   try {
     const portfolio = yield call(rsf.database.read, 'portfolio');
+    console.log(portfolio, 333434)
     yield put({ type: portfolioTypes.PORTFOLIO_SUCCESS, portfolio });
   } catch (e) {
     // console.log(e);

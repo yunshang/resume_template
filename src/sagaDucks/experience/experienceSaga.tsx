@@ -6,6 +6,7 @@ import { types as experienceTypes } from './experience';
 function* experienceWillFetch() {
   try {
     const experience = yield call(rsf.database.read, 'experience');
+    console.log(experience, "experience")
     yield put({ type: experienceTypes.EXPERIENCE_SUCCESS, experience });
   } catch (e) {
     // console.log(e);
