@@ -8,10 +8,9 @@ import { PortfolioIcon } from '../../components';
 import { Card } from '../index';
 
 interface IPortfolio {
-  isShow?: string,
-  name?: string,
-  url?: string,
-  img_path?: string,
+  sumUp: string,
+  id: number,
+  isShow: boolean,
 }
 
 interface IProps {
@@ -34,7 +33,7 @@ class PortfolioContainer extends React.Component<IProps, IState> {
     const portfolioList = props.portfolio.map((value: IPortfolio) => {
       let el = (<></>);
       if (value.isShow) {
-        el = <PortfolioIcon data={value} key={value.name} />;
+        el = <PortfolioIcon data={value} key={value.id} />;
       }
       return el;
     });
@@ -46,7 +45,7 @@ class PortfolioContainer extends React.Component<IProps, IState> {
   }
   render() {
     return (
-      <Card title="Portfolio" icon="icon-folder-open">
+      <Card title="个人总结" icon="icon-folder-open">
         <PortfolioGridList>
           {this.state.portfolioList}
         </PortfolioGridList>
@@ -70,8 +69,4 @@ const mapDispatchToProps = (dispatch: any) => ({
 export default connect(mapStateToProps, mapDispatchToProps)(PortfolioContainer);
 
 const PortfolioGridList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
-  justify-content: space-around;
-  grid-row-gap: 20px;
 `;

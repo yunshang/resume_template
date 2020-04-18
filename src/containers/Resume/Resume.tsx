@@ -11,9 +11,9 @@ class ResumeContainer extends React.Component {
           <AboutCard />
         </FixedContent>
         <ScrollableContent>
+          <EducationCard />
           <ExperienceCard />
           <TechnologyCard />
-          <EducationCard />
           <PortfolioCard />
         </ScrollableContent>
       </ResumeGrid>

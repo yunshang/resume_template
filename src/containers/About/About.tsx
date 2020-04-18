@@ -22,6 +22,8 @@ interface IAbout {
   pdf_url?: string,
   updated_at?: string,
   data?: IAbout,
+  github?: string,
+  workYear?: string,
 }
 
 interface IProps {
@@ -68,34 +70,25 @@ class AboutContainer extends React.Component<IProps, IState> {
   render() {
     return (
       <React.Fragment>
-        <div style={{ fontSize: '14px', textAlign: 'center', marginBottom: '5px' }}>
-          Moving soon to <a href="https://devlin.ph/">https://devlin.ph/</a>
-        </div>
         <AboutGrid>
-          <AvatarSection>
-            {/* <Avatar src={this.props.about.profile_photo_url} alt="profile" /> */}
-            <Avatar src="https://res.cloudinary.com/dfrhytey3/image/upload/v1551529389/icons/logo.png" alt="profile" />
-          </AvatarSection>
           <NameTitle>
-            <Name>{this.props.about.first_name}
-              <LastName>{this.props.about.last_name}</LastName>
+            <Name>
+              {this.props.about.last_name}
             </Name>
-            <Title>{this.props.about.role}</Title>
+            {/* <Title>{this.props.about.role}</Title> */}
           </NameTitle>
           {this.props.about.email ? <Info>{this.props.about.email}<InfoIcon className="icon-mail" /></Info> : null}
           {this.props.about.skype ? <Info>{this.props.about.skype}<InfoIcon className="icon-skype" /></Info> : null}
           {this.props.about.mobile ? <Info>{this.props.about.mobile}<InfoIcon className="icon-phone" /></Info> : null}
+          {this.props.about.github ? <Info>{this.props.about.github}<InfoIcon className="icon-github-circled" /></Info> : null}
           {this.props.about.address ? <Info>{this.props.about.address}<InfoIcon className="icon-home" /></Info> : null}
+          {this.props.about.workYear ? <Info>{this.props.about.workYear}<InfoIcon className="icon-user" /></Info> : null}
           {this.props.about.website ? <Info><Url href={this.props.about.website}>{this.props.about.website}<InfoIcon className="icon-rocket" /></Url></Info> : null}
-          <AboutFooter>
+          {/* <AboutFooter>
             <SocialLinks>
               {this.state.socialLinks}
             </SocialLinks>
-
-            <Button onClick={() => this.openFile(this.props.about.pdf_url ?? '')}><i className="icon-download" /> PDF</Button>
-            <FooterTag>Updated at {moment(this.props.about.updated_at, 'YYYY-MM-DD').format('DD MMM, YYYY')}</FooterTag>
-            <FooterTag>© 2018 iamdevlinph</FooterTag>
-          </AboutFooter>
+          </AboutFooter> */}
         </AboutGrid>
       </React.Fragment>
     );

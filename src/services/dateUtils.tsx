@@ -1,26 +1,26 @@
 import moment from 'moment';
 
-const DATE_FORMAT = 'DD-MMM-YYYY';
+const DATE_FORMAT = 'YYYY-MMM-DD';
 
 // To Do
 function diffYears(diff: number) {
   const years = Math.floor(diff / 365);
-  const yearStr = (years > 1) ? 'years' : 'year';
+  const yearStr = (years > 1) ? '年' : '年';
   const remainder = diff - (years * 365);
   let returnString = `${years} ${yearStr}`;
   if (remainder > 30) { // considered as month
     const months = Math.floor(remainder / 30);
-    returnString += `, ${months} months`;
+    returnString += `, ${months} 月`;
   }
   return returnString;
 }
 
 function diffMonths(diff: number) {
   // + 1 to include current month
-  const string = 'month';
+  const string = '月';
   const months = Math.floor(diff / 30) + 1;
   const newDiff = months;
-  return `${newDiff} ${(months > 1) ? `${string}s` : string}`;
+  return `${newDiff} ${(months > 1) ? `${string}` : string}`;
 }
 
 // check if date is 'Present'
@@ -49,7 +49,7 @@ export function getDuration(from: string, to: string, format: string) {
   } else if (diff > 30) { // month as biggest unit
     duration = diffMonths(diff);
   } else { // day as biggest unit
-    duration = `${diff} days`;
+    duration = `${diff} 天`;
   }
 
   return duration;

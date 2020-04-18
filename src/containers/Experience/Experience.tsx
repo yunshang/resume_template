@@ -43,12 +43,13 @@ class ExperienceContainer extends React.Component<IProps, IState> {
     super(props);
     this.state = {
       experienceToTimeline: [],
-      toggleAll: false,
+      toggleAll: true,
     };
   }
 
   componentWillMount() {
     this.props.requestExperience();
+    this.generate(this.props, this.state.toggleAll);
   }
 
   componentWillReceiveProps(props: IProps) {
@@ -57,14 +58,15 @@ class ExperienceContainer extends React.Component<IProps, IState> {
 
   generate = (props: IProps, toggleAll: boolean) => {
     // manipulate experience data to match timeline expected data
-    const newData = _.orderBy(props.experience, [exp => exp.id], ['desc']).reduce((newArr: IExperience[], obj, idx) => {
-      const dateFrom = moment(obj.workFrom, 'MMMM-YYYY').format('MMM YYYY');
+    const newData = _.orderBy(props.experience, [exp => exp.id], ['asc']).reduce((newArr: IExperience[], obj, idx) => {
+      const dateFrom = moment(obj.workFrom, 'YYYY-MM-DD').format('YYYY-MM-DD');
       const dateTo = (obj.workTo !== 'Present') ?
-        moment(obj.workTo, 'MMMM-YYYY').format('MMM YYYY') : (<Present />);
-      const dateDuration = dateUtils.getDuration(obj.workFrom, obj.workTo, 'MMMM-YYYY');
+        moment(obj.workTo, 'YYYY-MM-DD').format('YYYY-MM-DD') : (<Present />);
+
+      const dateDuration = dateUtils.getDuration(obj.workFrom, obj.workTo, 'YYYY-MM-DD');
       const subContent = (
         <div>
-          <SubContentMain>Technologies Used:</SubContentMain>
+          <SubContentMain>技术使用:</SubContentMain>
           <SubContentTag>{obj.technologies}</SubContentTag>
         </div>
       );
@@ -82,9 +84,9 @@ class ExperienceContainer extends React.Component<IProps, IState> {
         subContent,
       };
 
-      if (toggleAll || idx < 1) {
+      // if (toggleAll || idx < 1) {
         newArr.push(newDataStruct);
-      }
+      // }
 
       return newArr;
     }, []);
@@ -98,7 +100,7 @@ class ExperienceContainer extends React.Component<IProps, IState> {
   }
   render() {
     return (
-      <Card title="Experience" icon="icon-suitcase" showMore onClick={() => this.toggleAll()} isMoreShown={this.state.toggleAll}>
+      <Card title="工作经历" icon="icon-suitcase" showMore={true} isMoreShown={true}>
         <Timeline data={this.state.experienceToTimeline} />
       </Card>
     );

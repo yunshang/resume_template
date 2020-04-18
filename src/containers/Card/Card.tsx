@@ -31,10 +31,6 @@ class CardContainer extends React.Component<IProps, IState> {
             {this.props.children}
           </CardContent>
         </Content>
-        <Action show={this.props.showMore}>
-          Show {this.props.isMoreShown ? 'Less' : 'More'}
-          <i className={`icon-${this.props.isMoreShown ? 'up' : 'down'}-dir`} />
-        </Action>
       </CardGrid>
     );
   }
@@ -81,7 +77,7 @@ const CardTitle = styled.span`
   display: block;
 `;
 const CardContent = styled.div`
-  margin-top: 20px;
+  // margin-top: 20px;
 `;
 const CardIcon = styled.i`
   font-size: 25px;

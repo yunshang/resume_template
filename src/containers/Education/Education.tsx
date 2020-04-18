@@ -56,8 +56,9 @@ class EducationContainer extends React.Component<IProps, IState> {
         id: value.school,
         dateFrom: value.studyFrom,
         dateTo: value.studyTo,
-        title: value.degree,
-        tagLine: value.school,
+        title: value.title,
+        tagLine: value.degree,
+        mainContent: value.mainContent,
       };
 
       return newDataStruct;
@@ -66,7 +67,7 @@ class EducationContainer extends React.Component<IProps, IState> {
   }
   render() {
     return (
-      <Card title="Education" icon="icon-graduation-cap">
+      <Card title="教育经验" icon="icon-graduation-cap">
         <Timeline data={this.state.educationToTimeline} />
       </Card>
     );

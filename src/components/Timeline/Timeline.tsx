@@ -134,7 +134,7 @@ const Duration = styled.span`
 const Title = styled.div`
   font-weight: bold;
   font-size: 16px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   margin-top: .5em;
 `;
 const TagLine = styled.div`
