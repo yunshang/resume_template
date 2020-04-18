@@ -39,7 +39,7 @@ class CardContainer extends React.Component<IProps, IState> {
 export default CardContainer;
 
 const Content = styled.div<{showMore: boolean}>`
-  padding: 30px 40px 20px;
+  padding: 10px 40px 10px;
 `;
 
 const Action = styled("div")<{show: boolean}>`
@@ -63,11 +63,11 @@ const Action = styled("div")<{show: boolean}>`
 
 const CardGrid = styled.div<{showMore: boolean}>`
   background: #fff;
-  margin: 0px 10px 20px;
+  margin: 0px 10px 10px;
   box-shadow: 0 1px 6px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.24);
   min-height: 200px;
   overflow: hidden;
-  padding-bottom: ${props => (props.showMore ? '-1px' : '20px')};
+  padding-bottom: ${props => (props.showMore ? '-1px' : '10px')};
 `;
 const CardTitle = styled.span`
   font-size: 20px;

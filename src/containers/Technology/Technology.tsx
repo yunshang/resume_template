@@ -14,9 +14,10 @@ interface IProps {
 } 
 
 interface ITechnology extends ITech {
+  id: number,
   name: string,
   img_path: string,
-  showSkill: boolean,
+  showskill: boolean,
   introduction: string,
   duration: IDuration[],
   referenceOnly: boolean,
@@ -65,24 +66,26 @@ class TechnologyContainer extends React.Component<IProps, IState> {
     return (
       <Card title="项目经历" icon="icon-code" showMore={false} onClick={() => this.toggleReference()} isMoreShown={true}>
         {
-          this.state.techList.map((value, index) => {
-            return (
-              <Project key={index}>
-                <Title>{value.name}</Title>
-                <Content>
-                  <MainContent>{value.introduction}</MainContent>
-                </Content>
-                <Item>
-                  {
-                    value.duration.map((_duration, ind) =>{
-                      return (
-                        <Li key={ind}>{_duration.hideDurationText}</Li>
-                      )
-                    })
-                  }
-                </Item>
-              </Project>
-            )
+           _.orderBy(this.state.techList, [exp => exp.id], ['asc']).map((value, index) => {
+            if (value.showskill) {
+              return (
+                <Project key={index}>
+                  <Title>{value.name}</Title>
+                  <Content>
+                    <MainContent>{value.introduction}</MainContent>
+                  </Content>
+                  <Item>
+                    {
+                      value.duration.map((_duration, ind) =>{
+                        return (
+                          <Li key={ind}>{_duration.hideDurationText}</Li>
+                        )
+                      })
+                    }
+                  </Item>
+                </Project>
+              )
+            }
           })
         }
       </Card>
