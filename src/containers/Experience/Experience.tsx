@@ -132,7 +132,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(ExperienceContainer)
 const Present = styled.span`
   &:before {
           color: #B52E31;
-  content: 'Present';
+  content: '至今';
 }
 `;
 const SubContentMain = styled.div`
