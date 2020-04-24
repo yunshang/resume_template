@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 import ReduxSagaFirebase from 'redux-saga-firebase';
-import config  from  '../../config';
+import config  from  '../config';
 
 const firebaseApp = firebase.initializeApp({
   apiKey: config.apiKey,
