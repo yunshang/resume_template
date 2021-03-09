@@ -1,0 +1,214 @@
+{
+  "about" : {
+    "address" : "杭州",
+    "email" : "alshin@126.com",
+    "first_name" : "",
+    "github" : "github.com/yunshang",
+    "last_name" : "李忠义",
+    "mobile" : "13723735342",
+    "pdf_url" : "",
+    "profile_avatar" : "",
+    "role" : "developer",
+    "social_links" : [ {
+      "icon" : "icon-github-circled",
+      "name" : "github",
+      "order" : 1,
+      "show" : true,
+      "url" : "https://github.com/yunshang"
+    } ],
+    "workYear" : "6年"
+  },
+  "education" : [ {
+    "address" : "Labangon, Cebu City, Philippines",
+    "degree" : "软件工程专业",
+    "duration" : "2011.09-2015.06",
+    "grade" : "",
+    "level" : "University",
+    "mainContent" : "于学校社团相思湖网站学习HTML, CSS, PHP, 开发并维护社团网站。",
+    "school_code" : "",
+    "studyFrom" : "2011",
+    "studyTo" : "2015",
+    "title" : "广西民族大学"
+  } ],
+  "experience" : [ {
+    "__workFrom" : "",
+    "address" : "",
+    "company" : "深圳市微莱信息科技有限公司",
+    "company_img" : "",
+    "company_website" : "www.nulive.cn",
+    "contract" : "全职",
+    "description" : "一个留学移民机构，主要负责公司平台的搭建和服务器的部署维护工作。",
+    "duration" : "2015-06-01 - 2017-08-01",
+    "id" : 1,
+    "long_address" : "",
+    "technologies" : "Rails, PostgreSQL, Vuejs",
+    "title" : "Ruby 后端开发",
+    "workFrom" : "2015-06-01",
+    "workTo" : "2017-08-01"
+  }, {
+    "address" : "",
+    "company" : "杭州缦图摄影有限公司",
+    "company_img" : "",
+    "company_website" : "",
+    "contract" : "全职",
+    "description" : "在公司主要是维护老系统，及功能迭代。开发公司内部人才盘点系统。",
+    "duration" : "2017-12-01 - 2018-05-01",
+    "exact_start_date" : "",
+    "id" : 2,
+    "long_address" : "",
+    "technologies" : "PHP, thinkPHP, MySQL, Lavavel",
+    "title" : "PHP 后端开发",
+    "workFrom" : "2017-12-01",
+    "workTo" : "2018-05-01"
+  }, {
+    "address" : "",
+    "company" : "杭州竹简科技有限公司",
+    "company_img" : "",
+    "company_website" : "",
+    "contract" : "全职",
+    "description" : "一家区块链公司，主要重构交易所网站，及其区块相关服务设计。",
+    "duration" : "2018-05-01 - 2018-09-01",
+    "exact_start_date" : "",
+    "id" : 3,
+    "long_address" : "",
+    "technologies" : "Peatio, Rails, NodeJs",
+    "title" : "软件研发工程师",
+    "workFrom" : "2018-05-01",
+    "workTo" : "2018-09-01"
+  }, {
+    "address" : "",
+    "company" : "浙江掌尊信息科技有限公司",
+    "company_img" : "",
+    "company_website" : "",
+    "contract" : "全职",
+    "description" : "一家专注研发教育行业产品的公司，在公司主要是开发了一个德育平台，改变学校传统的指标考评流程，集成了考评班级分数，评选，会反馈等功能。",
+    "duration" : "2018-05-01 - 2018-09-01",
+    "exact_start_date" : "",
+    "id" : 4,
+    "long_address" : "",
+    "technologies" : "Rails, Docker, React, MySQL",
+    "title" : "Ruby 工程师",
+    "workFrom" : "2018-10-01",
+    "workTo" : "2020-05-20"
+  },{
+    "address" : "",
+    "company" : "浙江涂联网络科技有限公司",
+    "company_img" : "",
+    "company_website" : "",
+    "contract" : "全职",
+    "description" : "涂联网一家以全国各地的涂料涂装专业人士群体作为平台落地服务的平台，线上线下服务同时进行，让所有关联企业及行业从业人员实现营销与管理的自动运转。",
+    "duration" : "2020-06-05 - Present",
+    "exact_start_date" : "",
+    "id" : 4,
+    "long_address" : "",
+    "technologies" : "Golang, Gin, Vue, MySQL",
+    "title" : "Golang 工程师",
+    "workFrom" : "2020-06-05",
+    "workTo" : "Present"
+  }
+],
+  "portfolio" : [ {
+    "id" : 1,
+    "isShow" : true,
+    "sumUp" : "可以快速学习，理解并应用"
+  }, {
+    "id" : 2,
+    "isShow" : true,
+    "sumUp" : "比较擅长 Ruby, Rails, Golang, PHP, Node.js"
+  }, {
+    "id" : 3,
+    "isShow" : true,
+    "sumUp" : "熟悉 Web 开发工具链，React, Vue, TypeScript, 并应用在实际项目中"
+  }, {
+    "id" : 3,
+    "isShow" : true,
+    "sumUp" : "熟悉 Linux 部署环境， Shell 命令与 Mac"
+  }, {
+    "id" : 4,
+    "isShow" : true,
+    "sumUp" : "开发工具: Vim, Vscode, Chrome, Shell"
+  } ],
+  "skills" : [ {
+    "duration" : [ {
+      "hideDurationText" : "从零搭建该系统的数据抓取服务。"
+    }, {
+      "hideDurationText" : "引入 vue.js, 创建可重用组件，逐步拆分系统为前后分离模式,建立完善前端构建流程。"
+    }, {
+      "hideDurationText" : "使用 ruby 重写了银联跨境支付 php 版的 sdk。"
+    } ],
+    "id" : 1,
+    "img_path" : "",
+    "introduction" : "基于 rails, postgresql, vuejs 开发的留学平台,该系统主要用于帮助学生测评和获取国外留学信息，并提供留学中介机构介入的平台。主要工作:",
+    "name" : "留学平台",
+    "showskill" : true
+  }, {
+    "duration" : [ {
+      "hideDurationText" : "独立负责整个项目，包括需求分析，框架设计，文档编写等。"
+    } ],
+    "id" : 2,
+    "img_path" : "",
+    "introduction" : "基于 thinkPHP, MySQL 开发的公司内部系统,该系统主要用于公司内部人才盘点，收集员工打评分数，并计算和统计得分情况。主要工作:",
+    "name" : "漫图星系人才盘点系统",
+    "showskill" : false
+  }, {
+    "duration" : [ {
+      "hideDurationText" : "编写模版生成脚本能快，通过依照数据库字段生成序列化和 model 文件，提高了研发效率。"
+    }, {
+      "hideDurationText" : "整合不同系统的数据源，加工后返回统一格式，解决后端提供的数据不一致的问题。"
+    }, {
+      "hideDurationText" : "编写数据迁移脚本适用入不同的平台，为后期引入微服务做铺垫。"
+    } ],
+    "id" : 3,
+    "img_path" : "",
+    "introduction" : "基于 Lavavel, MySQL 开发的系统,该系统主要提供用户预约拍照和门店查看客户照片后期进度和管理预约安排。主要工作:",
+    "name" : "茄子乐拍",
+    "showskill" : true
+  }, {
+    "duration" : [ {
+      "hideDurationText" : "负责重新设计 Peatio API。"
+    }, {
+      "hideDurationText" : "用 Node.js,  RabbitMQ 发布订阅区块交易信息,提供模块的扩展性，可维护性，更好地适应不同后续的不同的数字货币。"
+    }, {
+      "hideDurationText" : "熟悉 Dapp 的编写。"
+    } ],
+    "id" : 4,
+    "img_path" : "",
+    "introduction" : "基于 Peatio, Rails, NodeJs 开发的数字货币交易所。主要工作:",
+    "name" : "触币交易所",
+    "showskill" : true
+  }, {
+    "duration" : [ {
+      "hideDurationText" : "设计和开发该系统的 API 接口，用 Sidekiq 管理数据中心的数据同步任务，提高错误的追踪效率。"
+    }, {
+      "hideDurationText" : "升级基础项目里的 dockerfile, 升级 Ruby 版本和用 nvm 控制管理 node 版本。"
+    }, {
+      "hideDurationText" : "React 代码脚手架，根据字段自动化生成 Redux, Action 等基础页面。"
+    } ],
+    "id" : 5,
+    "img_path" : "",
+    "introduction" : "基于 Rails, Docker, React 开发的学校智能管理平台。主要工作:",
+    "name" : "德育管理系统",
+    "showskill" : true
+  }, {
+    "duration" : [ {
+      "hideDurationText" : "根据团队项目的标准结构，逐步打磨开发一个脚手架的基础项目,可以根据数据库 schema 生成相应的 model, route, api 层， biz 层，dao 层,提高团队初期开发效率。"
+    },{
+      "hideDurationText" : "负责平台的订单相关的核心功能开发: 订单状态机，货物发货量，退款金额等。"
+    }
+  ],
+    "id" : 6,
+    "img_path" : "",
+    "introduction" : "基于 Golang, Gin, Vue 开发的供应链平台",
+    "name" : "合众供应链平台",
+    "showskill" : true
+  },{
+    "duration" : [ {
+      "hideDurationText" : "拆减简历模板，减少模块耦合，使用styled-components 生成的样式组件, firebase 做数据托管，可以高度复用的简历模板。"
+    } ],
+    "id" : 7,
+    "img_path" : "",
+    "introduction" : "基于 React, TypeScript, Hook 开发的简历模板",
+    "name" : "简历模板",
+    "showskill" : true
+  }]
+}

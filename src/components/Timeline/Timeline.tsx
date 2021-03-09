@@ -38,10 +38,10 @@ class TimelineComponent extends React.Component<IProps, IState> {
    * @param {*} subContent custom component
    */
   componentWillReceiveProps(props: IProps) {
-    const events = props.data.map((value) => {
+    const events = props.data.map((value, idx) => {
       let el = null;
       el = (
-        <Item key={value.id}>
+        <Item key={idx}>
           <Marker>
             <Period />
             <Line />

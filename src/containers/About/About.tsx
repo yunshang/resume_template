@@ -2,12 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
-import moment from 'moment';
+// import moment from 'moment';
 import _ from 'lodash';
 
 import { actions as aboutActions } from '../../sagaDucks/about/about';
 
-import { Button, IconLink } from '../../components';
+import { IconLink } from '../../components';
 
 interface IAbout {
   social_links?: IValue[],
@@ -114,15 +114,15 @@ const AboutGrid = styled.div`
   background: white;
   text-align: right;
 `;
-const AvatarSection = styled.div`
-  text-align: center;
-`;
-const Avatar = styled.img`
-  vertical-align: middle;
-  /* height: auto; */
-  /* remove when using the smiley avatar */
-  width: 100%;
-`;
+// const AvatarSection = styled.div`
+//   text-align: center;
+// `;
+// const Avatar = styled.img`
+//   vertical-align: middle;
+//   /* height: auto; */
+//   /* remove when using the smiley avatar */
+//   width: 100%;
+// `;
 const NameTitle = styled.div`
   background: #B52E31;
   color: white;
@@ -133,14 +133,14 @@ const NameTitle = styled.div`
 const Name = styled.div`
   font-size: 25px;
 `;
-const LastName = styled.span`
-  margin-left: 5px;
-  color: #333131;
-`;
-const Title = styled.span`
-  font-size: 14px;
-  font-weight: 400;
-`;
+// const LastName = styled.span`
+//   margin-left: 5px;
+//   color: #333131;
+// `;
+// const Title = styled.span`
+//   font-size: 14px;
+//   font-weight: 400;
+// `;
 const Info = styled.div`
   background: #33373D;
   color: #85878B;
@@ -149,27 +149,27 @@ const Info = styled.div`
   border-bottom: 1px solid #26292e;
   font-weight: bold;
 `;
-const AboutFooter = styled.div`
-  margin-top: 12px;
-  text-align: center;
-`;
-const SocialLinks = styled.ul`
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  li {
-    display: inline-block;
-    margin-right: 2px;
-    text-align: center;
-  }
-`;
+// const AboutFooter = styled.div`
+//   margin-top: 12px;
+//   text-align: center;
+// `;
+// const SocialLinks = styled.ul`
+//   list-style: none;
+//   margin: 0px;
+//   padding: 0px;
+//   li {
+//     display: inline-block;
+//     margin-right: 2px;
+//     text-align: center;
+//   }
+// `;
 const InfoIcon = styled.i`
   margin-left: 5px;
 `;
-const FooterTag = styled.div`
-  font-size: 12px;
-  color: #999;
-`;
+// const FooterTag = styled.div`
+//   font-size: 12px;
+//   color: #999;
+// `;
 const Url = styled.a`
   color: #85878B;
   text-decoration: none;

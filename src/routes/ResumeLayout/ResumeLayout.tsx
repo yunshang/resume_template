@@ -20,9 +20,9 @@ interface IProps {
 } 
 
 class ResumeLayout extends React.Component<IProps> {
-  constructor(prop: IProps) {
-    super(prop);
-  };
+  // constructor(prop: IProps) {
+  //   super(prop);
+  // };
   render() {
     return (
       <ResumeLayoutGrid>

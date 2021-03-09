@@ -29,11 +29,11 @@ const PortfolioIconContainer = styled.div`
   overflow: hidden;
   position: relative;
 `;
-const PortfolioIamage = styled.img`
-  max-width: 100%;
-  vertical-align: middle;
-  margin: auto 0;
-`;
+// const PortfolioIamage = styled.img`
+//   max-width: 100%;
+//   vertical-align: middle;
+//   margin: auto 0;
+// `;
 const PortfolioTitle = styled.ul`
   font-size: 14px;
   list-style:none;

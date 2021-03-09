@@ -1,11 +1,12 @@
-import { put, takeLatest, call } from 'redux-saga/effects';
-import rsf from '../rsf';
+import { put, takeLatest } from 'redux-saga/effects';
+import data from '../../resume.json';
 
 import { types as portfolioTypes } from './portfolio';
 
 function* portfolioWillFetch() {
   try {
-    const portfolio = yield call(rsf.database.read, 'portfolio');
+    // const portfolio = yield call(rsf.database.read, 'portfolio');
+    const portfolio = data.portfolio
     yield put({ type: portfolioTypes.PORTFOLIO_SUCCESS, portfolio });
   } catch (e) {
     // console.log(e);

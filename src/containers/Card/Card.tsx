@@ -42,24 +42,24 @@ const Content = styled.div<{showMore: boolean}>`
   padding: 10px 40px 10px;
 `;
 
-const Action = styled("div")<{show: boolean}>`
-  position: relative;
-  width: 100%;
-  font-size: 12px;
-  height: 30px;
-  background: #D25255;
-  margin: 0 auto;
-  overflow: hidden;
-  z-index: 1;
-  cursor: pointer;
-  transition: color .3s;
-  line-height: 30px;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  display: ${props => (props.show ? 'block' : 'none')};
-  font-weight: bold;
-`;
+// const Action = styled("div")<{show: boolean}>`
+//   position: relative;
+//   width: 100%;
+//   font-size: 12px;
+//   height: 30px;
+//   background: #D25255;
+//   margin: 0 auto;
+//   overflow: hidden;
+//   z-index: 1;
+//   cursor: pointer;
+//   transition: color .3s;
+//   line-height: 30px;
+//   text-align: center;
+//   color: #fff;
+//   text-transform: uppercase;
+//   display: ${props => (props.show ? 'block' : 'none')};
+//   font-weight: bold;
+// `;
 
 const CardGrid = styled.div<{showMore: boolean}>`
   background: #fff;

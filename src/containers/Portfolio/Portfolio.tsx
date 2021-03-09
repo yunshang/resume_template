@@ -30,10 +30,10 @@ class PortfolioContainer extends React.Component<IProps, IState> {
     this.props.requestPortfolio();
   }
   componentWillReceiveProps(props: IProps) {
-    const portfolioList = props.portfolio.map((value: IPortfolio) => {
+    const portfolioList = props.portfolio.map((value: IPortfolio, idx: number) => {
       let el = (<></>);
       if (value.isShow) {
-        el = <PortfolioIcon data={value} key={value.id} />;
+        el = <PortfolioIcon data={value} key={idx} />;
       }
       return el;
     });

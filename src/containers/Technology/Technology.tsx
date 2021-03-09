@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import _ from 'lodash';
 
 import { actions as technologyActions } from '../../sagaDucks/technology/technology';
-import { TechIcon } from '../../components';
+// import { TechIcon } from '../../components';
 import { Card } from '../index';
 
 interface IProps {
@@ -49,7 +49,7 @@ class TechnologyContainer extends React.Component<IProps, IState> {
     this.props.requestTechnology();
   }
   componentWillReceiveProps(props: IProps) {
-    const referenceTechList: ITechnology[] = [];
+    // const referenceTechList: ITechnology[] = [];
     const techList = _.orderBy(props.technology, [tech => tech.name.toLowerCase()], ['asc']).map((tech: ITechnology) => {
       return tech;
     });
@@ -86,6 +86,7 @@ class TechnologyContainer extends React.Component<IProps, IState> {
                 </Project>
               )
             }
+            return (<></>)
           })
         }
       </Card>
@@ -107,11 +108,11 @@ const mapDispatchToProps = (dispatch: any) => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(TechnologyContainer);
 
-const TechIconsHolder = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill,100px);
-  justify-content: space-between;
-`;
+// const TechIconsHolder = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill,100px);
+//   justify-content: space-between;
+// `;
 
 const Period = styled.div`
   grid-area: timeline-period;
@@ -125,7 +126,6 @@ const Period = styled.div`
   transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 `;
 
-const Event = styled.div``;
 const Item = styled.ul`
   font-size: 14px;
   padding-left: 30px;

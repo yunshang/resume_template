@@ -2,9 +2,9 @@
 import Loadable from 'react-loadable';
 import { Loading } from './components';
 
-const fakeDelay = (ms:number) => new Promise((resolve) => {
-    setTimeout(resolve, ms);
-});
+// const fakeDelay = (ms:number) => new Promise((resolve) => {
+//     setTimeout(resolve, ms);
+// });
 
 const About = Loadable({
   loader: () => import('./containers/About/About'),
