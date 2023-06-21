@@ -16,7 +16,7 @@
       "show" : true,
       "url" : "https://github.com/yunshang"
     } ],
-    "workYear" : "6年"
+    "workYear" : "8年"
   },
   "education" : [ {
     "address" : "Labangon, Cebu City, Philippines",
@@ -24,7 +24,7 @@
     "duration" : "2011.09-2015.06",
     "grade" : "",
     "level" : "University",
-    "mainContent" : "于学校社团相思湖网站学习HTML, CSS, PHP, 开发并维护社团网站。",
+    "mainContent" : "",
     "school_code" : "",
     "studyFrom" : "2011",
     "studyTo" : "2015",
@@ -71,8 +71,8 @@
     "exact_start_date" : "",
     "id" : 3,
     "long_address" : "",
-    "technologies" : "Peatio, Rails, NodeJs",
-    "title" : "软件研发工程师",
+    "technologies" : "Peatio, Rails, NodeJs, React",
+    "title" : "全栈工程师",
     "workFrom" : "2018-05-01",
     "workTo" : "2018-09-01"
   }, {
@@ -87,7 +87,7 @@
     "id" : 4,
     "long_address" : "",
     "technologies" : "Rails, Docker, React, MySQL",
-    "title" : "Ruby 工程师",
+    "title" : "全栈工程师",
     "workFrom" : "2018-10-01",
     "workTo" : "2020-05-20"
   },{
@@ -97,13 +97,28 @@
     "company_website" : "",
     "contract" : "全职",
     "description" : "涂联网一家以全国各地的涂料涂装专业人士群体作为平台落地服务的平台，线上线下服务同时进行，让所有关联企业及行业从业人员实现营销与管理的自动运转。",
-    "duration" : "2020-06-05 - Present",
+    "duration" : "2020-06-05 - 2021-03-20",
     "exact_start_date" : "",
     "id" : 4,
     "long_address" : "",
     "technologies" : "Golang, Gin, Vue, MySQL",
     "title" : "Golang 工程师",
     "workFrom" : "2020-06-05",
+    "workTo" : "2021-04-01"
+  },{
+    "address" : "",
+    "company" : "杭州十域科技有限公司",
+    "company_img" : "",
+    "company_website" : "",
+    "contract" : "全职",
+    "description" : "室内定位，大数据公司",
+    "duration" : "2021-04-01 - Present",
+    "exact_start_date" : "",
+    "id" : 5,
+    "long_address" : "",
+    "technologies" : "Typescript, NodeJs, Vue, K8s, Python",
+    "title" : "全栈工程师",
+    "workFrom" : "2021-04-01",
     "workTo" : "Present"
   }
 ],
@@ -114,15 +129,15 @@
   }, {
     "id" : 2,
     "isShow" : true,
-    "sumUp" : "比较擅长 Ruby, Rails, Golang, PHP, Node.js"
+    "sumUp" : "比较擅长 Ruby, Golang, PHP, Python"
   }, {
     "id" : 3,
     "isShow" : true,
-    "sumUp" : "熟悉 Web 开发工具链，React, Vue, TypeScript, 并应用在实际项目中"
+    "sumUp" : "熟悉 Web 开发工具链，React, Vue, AngularJS, TypeScript, 并应用在实际项目中"
   }, {
     "id" : 3,
     "isShow" : true,
-    "sumUp" : "熟悉 Linux 部署环境， Shell 命令与 Mac"
+    "sumUp" : "熟悉 Linux, Docker, K8s 部署环境， Shell 命令与 Mac"
   }, {
     "id" : 4,
     "isShow" : true,
@@ -133,9 +148,7 @@
       "hideDurationText" : "从零搭建该系统的数据抓取服务。"
     }, {
       "hideDurationText" : "引入 vue.js, 创建可重用组件，逐步拆分系统为前后分离模式,建立完善前端构建流程。"
-    }, {
-      "hideDurationText" : "使用 ruby 重写了银联跨境支付 php 版的 sdk。"
-    } ],
+    }],
     "id" : 1,
     "img_path" : "",
     "introduction" : "基于 rails, postgresql, vuejs 开发的留学平台,该系统主要用于帮助学生测评和获取国外留学信息，并提供留学中介机构介入的平台。主要工作:",
@@ -203,9 +216,34 @@
     "showskill" : true
   },{
     "duration" : [ {
+      "hideDurationText" : "实现基于 WEBGL 的三维地图前端实时渲染，跨平台可交互。轻松实现不同场景的应用开发。"
+    },{
+      "hideDurationText" : "结合室内定位技术,实现反向寻车, 实时导航等功能"
+    }
+  ],
+    "id" : 7,
+    "img_path" : "",
+    "introduction" : "基于 Typescript, BabylonJs, Vue 开发的室内地图",
+    "name" : "室内 GIS 地图",
+    "showskill" : true
+
+  },{
+    "duration" : [ {
+      "hideDurationText" : "设备定位,设备轨迹回放和视频联动,设备监控预警与电⼦围栏等相关功能"
+    },{
+      "hideDurationText" : "主要维护定位相关服务"
+    }
+  ],
+    "id" : 8,
+    "img_path" : "",
+    "introduction" : "基于 NestJS,Angular,GraphQL 开发的信息化平台",
+    "name" : "工业线定位智能平台",
+    "showskill" : true
+  }, {
+    "duration" : [ {
       "hideDurationText" : "拆减简历模板，减少模块耦合，使用styled-components 生成的样式组件, firebase 做数据托管，可以高度复用的简历模板。"
     } ],
-    "id" : 7,
+    "id" : 9,
     "img_path" : "",
     "introduction" : "基于 React, TypeScript, Hook 开发的简历模板",
     "name" : "简历模板",

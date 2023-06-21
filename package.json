@@ -30,7 +30,8 @@
     "redux-saga": "^1.1.3",
     "redux-saga-firebase": "^0.15.0",
     "styled-components": "^5.1.0",
-    "typescript": "~3.7.2"
+    "ts-node": "^10.8.1",
+    "typescript": "~4.6.3"
   },
   "homepage": "https://yunshang.github.io/resume_template",
   "scripts": {

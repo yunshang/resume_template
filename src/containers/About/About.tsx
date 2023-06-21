@@ -29,7 +29,7 @@ interface IAbout {
 interface IProps {
   requestAbout: () => void,
   about: IAbout,
-} 
+}
 
 interface IState {
   socialLinks?: JSX.Element[],
@@ -41,6 +41,7 @@ interface IValue {
   name: string,
   url: string,
   icon: string,
+  number: number,
 }
 
 class AboutContainer extends React.Component<IProps, IState> {
@@ -52,7 +53,7 @@ class AboutContainer extends React.Component<IProps, IState> {
     this.props.requestAbout();
   }
   componentWillReceiveProps(props: IProps) {
-    const socialLinks = _.orderBy(props.about.social_links, ['order'], ['asc']).map((value: IValue) => {
+    const socialLinks = _.orderBy(props.about.social_links, ['order'], ['asc']).map((value: any) => {
       let el: JSX.Element = (<></>);
       if (value.show) {
         el = (

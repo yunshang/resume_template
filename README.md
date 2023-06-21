@@ -28,7 +28,7 @@ resume/
 
 1. Clone the repository
 ```
-git clone git@github.com:yunshang/resume_template.git 
+git clone git@github.com:yunshang/resume_template.git
 ```
 
 2. Go into the directory
